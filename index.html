@@ -383,7 +383,7 @@
                     </address>
                 </div>
                 <div class="social-links-container">
-                    <h3 class="links--header">Присоединяйтесь</h3>
+                    <h3 class="links-header">Присоединяйтесь</h3>
                     <ul class="social-links link list">
                         <li class="social-link">
                             <a class="social-link-list for-footer" href="">
@@ -415,11 +415,46 @@
                         </li>
                     </ul>
                 </div>
+            
+                <div class="footer-form-container">
+                    <h3 class="links-header">Подпишитесь на рассылку</h3>
+                    <form action="#" name="subscription" class="footer-form">
+                        <input class="input-email" type="email" name="email" placeholder="E-mail" required>
+                        <button type="submit" class="footer-form-button"> 
+                            <p>Подписаться</p>
+                            <svg class="footer-form-icon">
+                                <use class="icon-form-icon-send" href="./images-for-sprite/sprite.svg#icon-form-icon-send" ></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+                
             </div>
         </section>
     </footer>
     <div class="backdrop" data-modal>
         <div class="modal">
+            <form action="#" name="order-service" class="modal-order">
+                <p>Оставьте свои данные, мы вам перезвоним</p>
+                <label for="">Имя</label>
+                <input type="text">
+
+                <label for="">Телефон</label>
+                <input type="tel">
+
+                <label for="">Почта</label>
+                <input type="email">
+
+                <label for="">Комментарий</label>
+                <textarea name="" id="" >Введите текст</textarea>
+
+                <label for=""></label>
+                <input type="checkbox">
+                <p>Соглашаюсь с рассылкой и принимаю</p>
+                <a href="#">Условия договора</a>
+                
+                <button type="submit"></button>
+            </form>
             <button class="modal-button" type="button" data-modal-close>
                 <svg class="button-icon">
                     <use href="./images-for-sprite/sprite.svg#icon-close-black-18dp-2-1"></use>
