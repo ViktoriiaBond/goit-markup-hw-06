@@ -71,7 +71,7 @@
       
         <section class="about-company">
             <div class="container">
-                <h2 class="deleted-header">особенности компании</h2>
+                <h2 class="deleted-header visually-hidden">особенности компании</h2>
                 <ul class="company-features list">
                     <li class="featur">
                         <svg class="about-company-icon">
@@ -360,7 +360,7 @@
 <!--футер-->
     <footer class="footer">
         <section class="links-footer">
-            <h2 class="deleted-header">контактная информация</h2>
+            <h2 class="deleted-header visually-hidden">контактная информация</h2>
             <div class="container-footer">
                 <div class="address">
                     <a href="/" class="web-logo">Web<span class="studio-logo-footer">Studio</span></a>
@@ -435,29 +435,52 @@
     <div class="backdrop" data-modal>
         <div class="modal">
             <form action="#" name="order-service" class="modal-order">
-                <p>Оставьте свои данные, мы вам перезвоним</p>
-                <label for="">Имя</label>
-                <input type="text">
+                <p class="modal-name">Оставьте свои данные, мы вам перезвоним</p>
+                <label class="modal-form-field-name">
+                     Имя
+                    <div class="container-form-icons">
+                        <input name="name" type="text" class="modal-form-field" required minlength="2">
+                        <svg class="modal-form-icons">
+                             <use class="modal-form-icon" href="./images-for-sprite/sprite.svg#icon-form-icon-name" ></use>
+                        </svg>
+                    </div>
+                </label>
 
-                <label for="">Телефон</label>
-                <input type="tel">
+                <label class="modal-form-field-name">
+                    Телефон
+                    <div class="container-form-icons">
+                        <input name="tel" type="tel" class="modal-form-field" required>
+                        <svg class="modal-form-icons">
+                             <use class="modal-form-icon" href="./images-for-sprite/sprite.svg#icon-form-icon-tel" ></use>
+                        </svg>
+                    </div>
+                </label>
 
-                <label for="">Почта</label>
-                <input type="email">
+                <label class="modal-form-field-name">
+                    Почта
+                    <div class="container-form-icons">
+                        <input name="email" type="email" class="modal-form-field" required>
+                        <svg class="modal-form-icons">
+                             <use class="modal-form-icon" href="./images-for-sprite/sprite.svg#icon-form-icon-emal" ></use>
+                        </svg>
+                    </div>
+                </label> 
 
-                <label for="">Комментарий</label>
-                <textarea name="" id="" >Введите текст</textarea>
+                <label class="modal-form-field-name">
+                    Комментарий
+                    <textarea name="comment" class="modal-form-comment" placeholder="Введите текст"></textarea>
+                </label>
 
-                <label for=""></label>
-                <input type="checkbox">
-                <p>Соглашаюсь с рассылкой и принимаю</p>
-                <a href="#">Условия договора</a>
-                
-                <button type="submit"></button>
+                <input type="checkbox" class="agree-mark visually-hidden" id="polisy-mark">
+                <label class="modal-form-polisy" for="polisy-mark">Соглашаюсь с рассылкой и принимаю
+                    <a href="#" class="agreement"> Условия договора</a>
+                </label>
+
+                <button type="submit" class="agree-button">Отправить</button>
             </form>
             <button class="modal-button" type="button" data-modal-close>
                 <svg class="button-icon">
-                    <use href="./images-for-sprite/sprite.svg#icon-close-black-18dp-2-1"></use>
+                    <use href="./images-for-sprite/sprite.svg#icon-close"></use>
                 </svg>
             </button>
         </div>
