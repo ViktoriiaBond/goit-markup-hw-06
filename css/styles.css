@@ -770,6 +770,14 @@ body {
   box-sizing: border-box;
   border-radius: 50%;
 }
+.modal-button:focus,
+.modal-button:hover{
+  outline: none;
+}
+.modal-button:focus .button-icon,
+.modal-button:hover .button-icon{
+  fill: var(--accent-color);
+}
 .button-icon{
   position: absolute;
   top: 50;
@@ -993,6 +1001,5 @@ body {
 }
 .input-email:focus{
   outline: none;
-  border-color: var(--accent-color);
 }
 /*------------конец форма футер-------------------*/
